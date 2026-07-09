@@ -64,7 +64,7 @@ export const projects = [
     tag: 'RAG · DOCUMENT INTELLIGENCE',
     title: 'DocuMind AI',
     oneLiner: 'Upload any PDF and have a full conversation with it — natural language, cited, and scored.',
-    video: './assets/videos/accident-detection.mp4',
+    video: './assets/videos/documind.mp4',
     stack: ['Gemini', 'RAG', 'ChromaDB', 'LangChain', 'Streamlit', 'Docker'],
     links: { live: 'https://docxmind-ai.streamlit.app/', github: 'https://github.com/haseebsaleeem/Documind' },
     description:
@@ -93,7 +93,7 @@ export const projects = [
     tag: 'COMPUTER VISION · REAL-TIME SYSTEMS',
     title: 'Smart Accident Detection System',
     oneLiner: 'Watches live CCTV footage, detects road accidents in real time, and auto-triggers emergency response.',
-    video: './assets/videos/documind.mp4',
+    video: './assets/videos/accident-detection.mp4',
     stack: ['Python', 'OpenCV', 'React', 'FastAPI', 'WebSockets', 'MongoDB'],
     links: { live: '#', github: '#' },
     description:

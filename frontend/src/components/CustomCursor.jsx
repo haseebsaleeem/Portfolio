@@ -44,7 +44,7 @@ export default function CustomCursor() {
   if (typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches) return null
 
   return (
-    <div className={`pointer-events-none fixed inset-0 z-[70] transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className={`pointer-events-none fixed inset-0 z-[120] transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
       <div
         ref={dotRef}
         className="fixed top-0 left-0 w-[6px] h-[6px] rounded-full bg-signal-cyan"
@@ -52,11 +52,10 @@ export default function CustomCursor() {
       />
       <div
         ref={ringRef}
-        className={`fixed top-0 left-0 rounded-full border transition-all duration-200 ${
-          hovering
-            ? 'w-14 h-14 border-signal-violet bg-signal-violet/10'
-            : 'w-9 h-9 border-signal-cyan/60'
-        }`}
+        className={`fixed top-0 left-0 rounded-full border transition-all duration-200 ${hovering
+          ? 'w-14 h-14 border-signal-violet bg-signal-violet/10'
+          : 'w-9 h-9 border-signal-cyan/60'
+          }`}
         style={{ willChange: 'transform' }}
       >
         {hovering && (

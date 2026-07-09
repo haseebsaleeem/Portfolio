@@ -47,7 +47,7 @@ export default function ProjectModal({ project, onClose }) {
               onClick={onClose}
               data-cursor-hover
               aria-label="Close"
-              className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-signal-alert/20 hover:text-signal-alert transition-colors text-ink"
+              className="fixed top-5 right-5 sm:top-8 sm:right-8 z-[100] w-11 h-11 rounded-full bg-void border border-ink-faint/40 flex items-center justify-center hover:bg-signal-alert/20 hover:border-signal-alert/60 hover:text-signal-alert transition-colors text-ink shadow-lg"
             >
               ✕
             </button>
@@ -115,6 +115,14 @@ export default function ProjectModal({ project, onClose }) {
                   </div>
                 ))}
               </div>
+
+              <button
+                onClick={onClose}
+                data-cursor-hover
+                className="mt-10 w-full py-3 rounded-lg border border-ink-faint/30 text-ink-muted hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors mono-tag text-xs uppercase"
+              >
+                ✕ Close
+              </button>
             </div>
           </motion.div>
         </motion.div>
